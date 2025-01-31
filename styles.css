@@ -91,7 +91,11 @@ main {
 .intro-role {
   font-size: 1.6875rem;
 }
-
+.intro-location {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
 hr {
   background: #804257;
   width: 50%;
