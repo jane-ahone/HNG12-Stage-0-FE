@@ -8,15 +8,17 @@
 }
 
 a {
-  text-decoration: none; /* Removes underline */
-  color: inherit; /* Inherits text color from parent */
-  outline: none; /* Removes focus outline */
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
 
 body {
   background: white;
   font-size: 16px;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -32,14 +34,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  flex-grow: 1;
 }
 
 .card-div {
   border-radius: 5.625rem;
   background: #fff;
   width: 50%;
-  height: 80%;
   overflow: hidden; /* Contains the gradient background */
   position: relative; /* For absolute positioning context */
 }
@@ -48,19 +49,21 @@ main {
   border-radius: 5.3125rem 5.3125rem 0 0;
   background: linear-gradient(180deg, #e51d60 0%, #804257 108.61%);
   width: 100%;
-  height: 30%;
+  height: 21vh;
   position: relative;
 }
 
+.image-div {
+  height: calc(200px - 15vh);
+}
+
 .profile-pic {
-  position: absolute;
-  bottom: -50%; /* Half of image height to create overlap */
+  position: relative;
+  top: -15vh;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .intro {
-  margin-top: 140px; /* Space for overlapped image */
   text-align: center;
 }
 
@@ -97,11 +100,11 @@ hr {
   width: 50%;
   text-align: center;
   height: 0.3rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .links {
-  margin-top: 1.5rem;
+  margin: 0 auto;
 }
 
 .links .text {
@@ -119,10 +122,11 @@ hr {
 .bio {
   text-align: center;
   padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .bio p {
-  font-size: 1.25rem;
   text-wrap: balance;
 }
 
