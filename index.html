@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div>
+        <span>UTC Time:</span>
+        <span class="current-time" data-testid="currentTimeUTC"> Time</span>
+      </div>
+    </header>
+    <main>
+      <div class="card-div">
+        <div class="profile-image">
+          <img
+            class="profile-pic"
+            data-testid="profilePic"
+            src="./assets/profile-group-300x300.png"
+            width="200px"
+            height="200px"
+          />
+        </div>
+        <div class="intro">
+          <p class="intro-name" data-testid="fullName">Jane Ahone Eloundou</p>
+          <p class="intro-role" data-testid="jobTitle">Software Engineer</p>
+        </div>
+        <hr />
+        <div class="bio">
+          <p>
+            Computer Engineering student at the University of Buea with a
+            passion for technology and problem-solving. As a tutor, she
+            introduced students to programming and developed a computer literacy
+            program
+          </p>
+        </div>
+        <div class="links">
+          <p class="text">Interested in connecting? Find me via:</p>
+          <div class="contact-links">
+            <a
+              data-testid="socialLinks"
+              href="https://www.linkedin.com/in/jane-eloundou-678808266"
+            >
+              <div class="icon-linkedin"></div>
+            </a>
+
+            <a href="https://github.com/jane-ahone" data-testid="socialLinks">
+              <div class="icon-github"></div>
+            </a>
+
+            <a href="mailto:jane.eloundou@gmail.com" data-testid="emailAddress">
+              <div class="icon-mail"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="index.js"></script>
+</html>
