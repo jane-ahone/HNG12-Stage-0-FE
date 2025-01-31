@@ -1,7 +1,7 @@
 let outputTime = document.querySelector(".current-time");
 
 function updateCurrentTime() {
-  const currentTimeUTC = new Date().toUTCString().split("T")[1];
+  const currentTimeUTC = new Date().toISOString().split("T")[1];
   console.log(currentTimeUTC);
 
   let currentTime = `${currentTimeUTC}`;
