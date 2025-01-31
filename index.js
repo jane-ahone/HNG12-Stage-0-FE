@@ -1,8 +1,10 @@
 let outputTime = document.querySelector(".current-time");
 
 function updateCurrentTime() {
-  const currentTimeMilliseconds = new Date().getTime();
-  let currentTime = `${currentTimeMilliseconds}`;
+  const currentTimeUTC = new Date().toUTCString().split("T")[1];
+  console.log(currentTimeUTC);
+
+  let currentTime = `${currentTimeUTC}`;
   outputTime.innerText = currentTime;
 }
 
